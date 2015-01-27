@@ -5,6 +5,8 @@ permalink: /about/
 feature-img: "img/sample_feature_img_2.png"
 ---
 
+I've studied ethics and esoteric texts with students of all ages, and helped them become leaders of their communities. Currently, I'm learning everything I can about JavaScript and the internet. I love building things, and digging until I understand how all the layers fit together. 
+
 This page is made possible by [Jekyll](http://jekyllrb.com/), and uses the Type Theme, licensed under the MIT License.
 
 Head over to the [theme's documentation](https://rohanchandra.github.io/project/type.html) for much more information about Type Theme or to install this theme on your own Jekyll site.
