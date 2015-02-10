@@ -4,7 +4,9 @@ title: Algorithms 101 Big O Notation
 ---
 I presented at the Nashville Women Programmers meetup on algorithms, giving an introduction to Big O notation.
 
-My slides are on my [google drive] (https://docs.google.com/presentation/d/1z45j6-zuiF4Iy67n23t_FqDqXICoccsZhNPoNY7nJTQ/edit?usp=sharing)  
+Slides:
+
+<iframe src="https://docs.google.com/presentation/d/1z45j6-zuiF4Iy67n23t_FqDqXICoccsZhNPoNY7nJTQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 Many whiteboard examples supplemented the slides that introduced Big O notation. These examples illustrated why big O ignores constants, and why smaller elements are irrelevant for large values. We started with various function formulas, and worked our way up to analyzing the algorithm for solving the handshake problem. 
 
