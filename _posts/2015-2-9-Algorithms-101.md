@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Algorithms 101: Big O Notation
+title: Algorithms 101 Big O Notation
 ---
 I presented at the Nashville Women Programmers meetup on algorithms, giving an introduction to Big O notation.
 
