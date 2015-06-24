@@ -5,7 +5,7 @@ url: "http://sfrapoport.github.io" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Type Theme
+  title: Sophie Rapoport
   avatar: avatar.png
   gravatar: # email md5 hash
   description: "Sophie Rapoport's website" # used by search engines
