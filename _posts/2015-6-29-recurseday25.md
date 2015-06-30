@@ -1,9 +1,10 @@
 ---
 layout: post
-title: RC: Day 26 
+title: RC Day 26 
 ---
+
 Today was a find-my-groove-back kind of day. At the end of last week I had been feeling like I wasn't making meaningful progress, and I found myself jealous of people who were pairing a lot, getting help from lots of folks and making REAL THINGS. 
-:
+
 So I decided that today I would pair with folks and get help instead of moping helplessly about some amorphous goal I wasn't meeting.
 
 After check-ins, I started with a code-kata workshop run by Jesse Chen - who is a TDD rockstar. Got to pair with Tim Sell, review Object-Oriented Python and test conventions. Pairing is always a great reminder that there are so many ways of solving a problem different from the path I would originally have taken. But 35 minutes is a very short time... And boy is it weird to hit delete without finishing the code.

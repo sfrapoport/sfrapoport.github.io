@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RC: Day 22 
+title: RC Day 22 
 ---
 
 Today I woke up early, so I got to take a bit of an extended coffee walk through the village and NYU's campus. Before check-ins I had culled a subset of Project Gutenberg data to play with for the Twitter Literature bot I'm hoping to unleash next week (@ILitYou has claimed the Twiterature name, sadly). [John](https://github.com/jdherg) also helped me iron out some tricky shell parameter expansion, which led me to the zsh docs. 
