@@ -1,6 +1,6 @@
 ---
-Layout: post
-Title: Mid-batch advice for the new RCers!
+layout: post
+title: Mid-batch advice for the new RCers!
 ---
 
 Advice for Summer 2's:
