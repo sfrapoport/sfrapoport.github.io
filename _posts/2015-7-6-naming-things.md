@@ -13,10 +13,10 @@ Finally - I wanted to know if there were best practices for refactoring, so I ta
 
 
 + Names are REALLY important:
-  - Function names should describe what functions DO (`convert_filename_to_file_descriptor`). Not the ROLE they play in the code (`handle_filename`).
-  - CONSTANTS should be declared globally and NEVER CHANGE
-  - Be careful when changing variable names. They need to change EVERYWHERE. This is easier with specific names like `convert_filename_to_file_descriptor` than with generic names like `command`
-  - Short names are useful for loop parameters and indices, but consistency is still super important 
+  -  Function names should describe what functions DO (`convert_filename_to_file_descriptor`). Not the ROLE they play in the code (`handle_filename`).
+  -  CONSTANTS should be declared globally and NEVER CHANGE
+  -  Be careful when changing variable names. They need to change EVERYWHERE. This is easier with specific names like `convert_filename_to_file_descriptor` than with generic names like `command`
+  -  Short names are useful for loop parameters and indices, but consistency is still super important 
 + It's ok to repeat yourself if it makes the control flow clearer. 
 + You can pass information onto a new scope (e.g. a child process) using function parameters (this fixed a really ugly control flow problem)
 + Talking about your code in words (and not just pictures) is very helpful. I need to get in the habit of rubber ducking a problem in words BEFORE I approach a facilitator for help, so that I can more quickly zero in on a problem.
