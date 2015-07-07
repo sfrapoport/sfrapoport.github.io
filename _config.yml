@@ -18,14 +18,14 @@ theme:
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
   
   # Icons
-  rss: false
+  rss: true
   email_address: # full email address, e.g. "sam@example.com"
   behance:
   bitbucket: 
   dribbble: 
   facebook: 
   flickr: 
-  github: 
+  github: https://github.com/sfrapoport
   google_plus: 
   instagram: 
   linkedin:  # full URL
