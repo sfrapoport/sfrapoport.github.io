@@ -3,7 +3,7 @@ layout: post
 title: Just test it!
 ---
 
-Where I left my shell yesterday, I knew that I had a problem, and I had spent hours tinkering with the code to diagnose the error. Why did single file redirects (`ls -la > lsa.txt`) and multiple pipes (`ls | wc | head`) work as expected, but piping & redirecting in the same command (`ls | wc > ls_wc.txt`) go nuts? 
+Where I left [my shell](https://github.com/sfrapoport/shell-workshop) yesterday, I knew that I had a problem, and I had spent hours tinkering with the code to diagnose the error. Why did single file redirects (`ls -la > lsa.txt`) and multiple pipes (`ls | wc | head`) work as expected, but piping & redirecting in the same command (`ls | wc > ls_wc.txt`) go nuts? 
 
 At some point I had done so much tinkering that multiple pipes had stopped working too. And then I remembered Tom saying yesterday that writing tests was a really effective way to make changes bit by bit, but not break the working code. Except when I started to think about writing tests for my shell, it seemed impossible. There were no `return` statements and so I couldn't just test the value of a function against what I was expecting! And even if I could test against the 'return' value, how would I hard-code the formatting of the expected value to match that produced by the command line? So I went to talk to Tom... again... about tests. 
 
