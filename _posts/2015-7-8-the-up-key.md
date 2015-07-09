@@ -1,6 +1,6 @@
 ---
 layout: post
-title: <UP>
+title: UP!
 ---
 
 After fixing the bug that had kept me enthralled for days on end, I decided to add history to my shell. Like how in a normal terminal, when you press the UP key, it lets you walk through a whole bunch of earlier commands, to save yourself the typing. (Really smart shells have tab-autocompletion as well, but that's another project for another day).
@@ -28,23 +28,31 @@ He sent me in the direction of the termios and tty modules, which are OS/Python 
 
 
 	def read_char_raw():
-	    fd = sys.stdin.fileno() 				#Get the file descriptor for STDIN
-	    old_settings = termios.tcgetattr(fd) 	#Copy the current settings of STDIN
-	    new = termios.tcgetattr(fd) 			#Make another copy of the settings to be modified
-	    new[3] = new[3] | termios.ECHO 			#Set the terminal to immediately echo bytes it receives
-	    termios.tcsetattr(fd, termios.TCSANOW, new)	#Set the terminal to execute commands immediately
-	    try:										
-	        tty.setraw(fd)						#Collect bytes intead of unicode characters
-	        c = sys.stdin.read(1)				#Read a byte
-	        if c == '\x1b': 					#If first byte matches up match
-	            n = sys.stdin.read(2) 			#Get next two bytes, return either 'up' or empty string
+		#Get the file descriptor for STDIN
+	    fd = sys.stdin.fileno() 
+	    #Copy the current settings of STDIN				
+	    old_settings = termios.tcgetattr(fd)
+	    #Make another copy of the settings to be modified 	
+	    new = termios.tcgetattr(fd) 
+	    #Set the terminal to immediately echo bytes it receives			
+	    new[3] = new[3] | termios.ECHO 		
+	    #Set the terminal to execute commands immediately	
+	    termios.tcsetattr(fd, termios.TCSANOW, new)	
+	    try:		
+	    	#Collect bytes intead of unicode characters								
+	        tty.setraw(fd)						
+	        c = sys.stdin.read(1)				
+	        #If first byte matches first byte of UP character
+	        if c == '\x1b': 					
+	            n = sys.stdin.read(2) 			
 	            if n == '[A': 						
 	                return 'up'					
 	            else:
 	                return ''
 	        else:
 	            return c
-	    finally:								#Set STDIN back to normal
+	    finally:								
+	    	#Set STDIN back to normal
 	        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
 
 
