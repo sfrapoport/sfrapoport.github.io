@@ -63,5 +63,6 @@ Things I learned while working on this:
 +  The clean code implementation using curtsies is nice, and I may well use it for the final version of my shell, but I really do like understanding things under the hood!
 +  Linux man pages are dense, but I find that I prefer reading the docs to following tutorials. 
 +  Even though I want to learn C, I'm holding onto Mary's advice from the 1st day of RC: Learn one programming language *really* well. I can't say I'm there yet with Python OR Javascript.
++  I'm still working on getting pygments and code formatting up and running, so it's ugly right now. Hope to fix that by the end of the week!
 
 
