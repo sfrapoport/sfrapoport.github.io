@@ -59,7 +59,7 @@ He sent me in the direction of the termios and tty modules, which are OS/Python 
 Things I learned while working on this:
 
 
-+  Some characters are more bytes than other characters! (Apparently there is a magical flag on the shell that resolves these inconsistencies for back-space, because otherwise, you might delete only one byte and garble all the text). Which is to say that at some point, you have to deal with [character encodings][http://www.joelonsoftware.com/articles/Unicode.html]. I still have to read that article.
++  Some characters are more bytes than other characters! (Apparently there is a magical flag on the shell that resolves these inconsistencies for back-space, because otherwise, you might delete only one byte and garble all the text). Which is to say that at some point, you have to deal with [character encodings](http://www.joelonsoftware.com/articles/Unicode.html). I still have to read that article.
 +  Finding good code examples for systems-level programming when you don't know C is difficult.
 +  The clean code implementation using curtsies is nice, and I may well use it for the final version of my shell, but I really do like understanding things under the hood!
 +  Linux man pages are dense, but I find that I prefer reading the docs to following tutorials. 
