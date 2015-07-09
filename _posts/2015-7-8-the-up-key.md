@@ -11,7 +11,6 @@ That sounded easy enough, but when I started googling around, it was surprisingl
 
 Amazingly, the very first example on the `curtsies` docs page was very easy to adapt to my purposes:
 
-
 	def read_char_curtsies():
 	    with Input(keyname='curtsies') as input_generator:
 	        for e in Input():
@@ -20,12 +19,11 @@ Amazingly, the very first example on the `curtsies` docs page was very easy to a
 	            else:
 	                return e
 
-
 This succeeded in capturing input, but it did not get along very well with my shell prompt, which wouldn't print on the screen until after my first key press, and the two different streams of input seemed to be randomly deciding what line they wanted to go on. I asked Tom for help, and he told me I needed to flush the buffer. So I did that, and it worked, but I didn't like how I was using two different interfaces to capture the first character and the rest of the line, so I asked him for help in thinking through other ways of approaching the problem.
 
 He sent me in the direction of the termios and tty modules, which are OS/Python built-ins that I had stumbled upon in my research into this problem, but was scared off by the sparse Python documentation. Tom said that they required spending time in man pages, and so I went back to my programming cave, prepared to dive into the Linux man pages, which gave me some clues about the flags I needed to set in order to capture input. The man pages don't, however, help you with syntax, especially in python. I managed to find enough examples online of Python for raw I/O to hack out this function: 
 
-
+{% highlight python %}
 
 	def read_char_raw():
 		#Get the file descriptor for STDIN
@@ -55,6 +53,7 @@ He sent me in the direction of the termios and tty modules, which are OS/Python 
 	    	#Set STDIN back to normal
 	        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
 
+{% end highlight %}
 
 Things I learned while working on this:
 
